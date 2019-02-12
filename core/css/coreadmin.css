@@ -1,0 +1,275 @@
+#action-panel .x-panel {
+	margin-bottom:3px;
+	margin-right:0;
+}
+#action-panel .x-panel-body {
+	border:0 none;
+}
+#action-panel .x-panel-body li {
+	margin:3px;	
+}
+#action-panel .x-panel-body li img {
+	width:16px;
+	height:16px;
+	vertical-align:middle;
+	margin-right:2px;
+	margin-bottom:2px;
+}
+#action-panel .x-panel-body li a {
+	text-decoration:none;
+	color:#3764A0;
+}
+#action-panel .x-plain-body {
+	
+    padding:3px 0 0 5px;
+}
+.x-air #action-panel .x-plain-body {
+	padding-left:3px;
+}
+#action-panel .x-panel-body li a:hover {
+	text-decoration:underline;
+	color:#15428b;
+}
+
+.x-panel-trans {
+	background:transparent;
+}
+
+.x-layout-split-west {
+	cursor:move;
+   
+}
+.x-panel-header-text {
+	color:#3764A0;
+}
+.menu-title{
+    background: #D6E3F2;
+    border-style: solid;
+    border-color:#DAE6F4 #99bbe8 #99bbe8 #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+
+.add{background-image:url(../images/icons/add.png) ! important;}
+.accept{background-image:url(../icons/accept.png) ! important;}
+.zoom{background-image:url(../icons/zoom_in.png) ! important;}
+
+.comment{background-image:url(../icons/comment.png) ! important;}
+
+.setting{background-image:url(../images/icons/bullet_wrench.png) ! important;}
+
+.PollResult{background-image:url(../images/icons/chart_pie.png) ! important;}
+.viewlist{background-image:url(../images/icons/viewlist.png) ! important;}
+.copy{background-image:url(../images/icons/copy.png) ! important;}
+.nullRating{background-image:url(../icons/null_rating.png) ! important;}
+.house{background-image:url(../images/icons/house.png) ! important;}
+.pages{background-image:url(../images/icons/pages.png) ! important;}
+.back{background-image:url(../images/icons/back.png) ! important;}
+.suite{background-image:url(../icons/tar_2708.png) ! important;}
+.apply{background-image:url(../images/icons/apply.png) ! important;}
+.delete{background-image:url(../images/icons/delete.png) ! important;}
+.edit{background-image:url(../images/icons/edit.png) ! important;}
+.camera{background-image:url(../icons/camera.png) ! important;}
+
+
+
+
+  
+ 
+  .ux-row-action-cell .x-grid3-cell-inner {
+   padding:1px 0 0 0;
+  }
+   .ux-row-action-item {
+   float:left;
+   min-width:16px;
+   height:16px;
+   background-repeat:no-repeat;
+   margin: 0 5px 0 0;
+  cursor:pointer;
+   overflow:hidden;
+   }
+   .ext-ie .ux-row-action-item {
+   width:16px;
+   }
+   .ext-ie .ux-row-action-text {
+  width:auto;
+   }
+   .ux-row-action-item span {
+   vertical-align:middle;
+   padding:0 0 0 20px;
+   line-height:18px;
+   }
+   .ext-ie .ux-row-action-item span {
+   width:auto;
+   }
+    
+   /* styles for groups */
+  .x-grid-group-hd div {
+  position:relative;
+   height:16px;
+   }
+   .ux-grow-action-item {
+   min-width:16px;
+   height:16px;
+   background-repeat:no-repeat;
+   background-position: 0 50% ! important;
+   margin: 0 0 0 4px;
+   padding: 0 ! important;
+   cursor:pointer;
+   float:left;
+   }
+   .ext-ie .ux-grow-action-item {
+   width:16px;
+   }
+   .ux-action-right {
+   float:right;
+   margin: 0 3px 0 2px;
+   padding: 0 ! important;
+   }
+   .ux-grow-action-text {
+   padding: 0 ! important;
+   margin:0 ! important;
+   background:transparent none ! important;
+   float:left;
+   }
+    
+  
+#gallery-view .x-panel-body{
+	background: white;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+#gallery-view .thumb{
+	background: #dddddd;
+	padding: 3px;
+}
+#gallery-view .thumb img{
+	height: 60px;
+	width: 80px;
+}
+#gallery-view .thumb-wrap{
+	float: left;
+	margin: 4px;
+	margin-right: 0;
+	padding: 5px;
+}
+#gallery-view .thumb-wrap span{
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+#gallery-view .x-view-over{
+    border:1px solid #dddddd;
+    background: #efefef url(../images/default/grid/row-over.gif) repeat-x left top;
+	padding: 4px;
+}
+
+#gallery-view .x-view-selected{
+	background: #eff5fb url(images/selected.gif) no-repeat right bottom;
+	border:1px solid #99bbe8;
+	padding: 4px;
+}
+#gallery-view .x-view-selected .thumb{
+	background:transparent;
+}
+
+#gallery-view .loading-indicator {
+	font-size:11px;
+	background-image:url('../images/default/grid/loading.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:20px;
+	margin:10px;
+}
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+   .upload-icon {
+            background: url('../images/icons/image_add.png') no-repeat 0 0 !important;
+        }
+        #fi-button-msg {
+            border: 2px solid #ccc;
+            padding: 5px 10px;
+            background: #eee;
+            margin: 5px;
+            float: left;
+        }
+        
+#images-view .x-panel-body{
+	background: white;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+#images-view .thumb{
+	background: #dddddd;
+	padding: 3px;
+}
+#images-view .thumb img{
+	height: 60px;
+	width: 80px;
+}
+#images-view .thumb-wrap{
+	float: left;
+	margin: 4px;
+	margin-right: 0;
+	padding: 5px;
+}
+#images-view .thumb-wrap span{
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+#images-view .x-view-over{
+    border:1px solid #dddddd;
+    background: #efefef url(../images/default/grid/row-over.gif) repeat-x left top;
+	padding: 4px;
+}
+
+#images-view .x-view-selected{
+	background: #eff5fb url(images/selected.gif) no-repeat right bottom;
+	border:1px solid #99bbe8;
+	padding: 4px;
+}
+#images-view .x-view-selected .thumb{
+	background:transparent;
+}
+
+#images-view .loading-indicator {
+	font-size:11px;
+	background-image:url('../images/default/grid/loading.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:20px;
+	margin:10px;
+}
+
+/* Chrome25 Bug fix, 100% width causes issues with the date picker, replaced with a fixed width*/
+table.x-date-inner {
+   width:200px !important; /* original was width : 100% */
+}
+

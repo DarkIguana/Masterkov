@@ -1,0 +1,229 @@
+<html>
+<head>
+<title>HTracer: User Guide</title>
+<meta name="robots" content="noindex,nofollow" />
+<style>
+	body{margin:30px;margin-top:0px;}
+	big{background-color:#F0F0F0;}
+	pre{color:gray;}
+	i{white-space:nowrap;color:gray;}
+	ol{margin-top:0;}
+	h2{margin-bottom:7px;}
+	#tabs div{font-size:12pt;}
+	#tabs{font-family:times New Roman; color:black;}
+</style>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/base/jquery-ui.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+</head>
+<body>
+<h2>User Guide</h2>
+<b>Version:</b> 3.3.1<br />
+
+<h2>Install</h2>
+<script>
+	$(function() {
+		$( "#tabs" ).tabs({ selected: 3 });
+	});
+	</script>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-2">DLE</a></li>
+		<li><a href="#tabs-3">Joomla</a></li>
+		<li><a href="#tabs-4">NetCat</a></li>
+		<li><a href="#tabs-5">Other CMS</a></li>
+	</ul>
+	<div id="tabs-2">
+		<ol>
+			<li>
+				Copy HTracer's folder to the site root (usually <i>public_html</i> or <i>www</i>). For security reasons rename it.
+			</li>
+			<li>
+				Set permission 777 to the folders '<i>cash</i>', '<i>query</i>', and file '<i>last_refer.txt</i>'
+			</li>
+			<li>
+				Rename file <i>admin/auto_config0.php</i> into <i>admin/auto_config.php</i> and set it's permission 777
+			</li>
+			<li>
+				Open file <i>index.php</i> in the site root (usually <i>public_html/index.php</i> or <i>www/index.php</i>)
+			</li>
+			<li>
+				In next string after <i>&lt;?php</i> insert:
+				<i>include_once('Path_To/HTracer.php');
+				ob_start();</i> 
+				<br /> For example, if you rename HTracer into HTracer_renamed 
+				<i>include_once('HTracer_renamed/HTracer.php');
+				ob_start();</i>
+			</li>
+			<li>
+				In the end of file <b>before</b> <i>GzipOut();</i> insert <i>htracer_ob_end();</i> 
+			</li>
+			<li>
+				Open options (<i>http://SITE.COM/HTracer_RENAMED/admin/options.php</i>).
+				Goto MySQL section and set MySQL connection params and:
+				<ul>
+					<li>MySQL=Forced</li>  
+					<li>SetNames=utf8</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+	<div id="tabs-3">
+		<ol>
+			<li>
+				Copy HTracer's folder to the site root (usually <i>public_html</i> or <i>www</i>). For security reasons rename it.
+			</li>
+			<li>
+				Set permission 777 to the folders '<i>cash</i>', '<i>query</i>', and file '<i>last_refer.txt</i>'
+			</li>
+			<li>
+				Rename file <i>admin/auto_config0.php</i> into <i>admin/auto_config.php</i> and set it's permission 777
+			</li>
+			<li>Disable gzip in Joomla admin</li>
+			<li>
+				Open file <i>index.php</i> in the site root (usually <i>public_html/index.php</i> or <i>www/index.php</i>)
+				and find string <i>echo JResponse::toString($mainframe->getCfg('gzip'));</i>
+			</li>
+			<li>Replace this line with the following code:<pre>
+	include_once('HTracer_Renamed/HTracer.php');
+	ob_start();
+	echo JResponse::toString($mainframe->getCfg('gzip'));
+	htracer_ob_end();</pre>
+				Where HTracer_Renamed -- new name of HTracer's folder.
+			</li>
+			<li>
+				Open options (<i>http://SITE.COM/HTracer_RENAMED/admin/options.php</i>).
+				Goto MySQL section and set MySQL connection params.
+			</li>
+		</ol>
+	</div>
+	<div id="tabs-4">
+	  <ol>
+			<li>
+				Copy HTracer's folder to the site root (usually <i>public_html</i> or <i>www</i>). For security reasons rename it.
+			</li>
+			<li>
+				Set permission 777 to the folders '<i>cash</i>', '<i>query</i>', and file '<i>last_refer.txt</i>'
+			</li>
+			<li>
+				Rename file <i>admin/auto_config0.php</i> into <i>admin/auto_config.php</i> and set it's permission 777
+			</li>
+			<li>
+				Open options (<i>http://SITE.COM/HTracer_RENAMED/admin/options.php</i>).
+				Goto MySQL section and set MySQL connection params and:
+				<ul>
+					<li>MySQL=Forced</li>  
+					<li>SetNames=utf8</li>
+				</ul>
+			</li>
+			<li>
+				Open file <i>netcat/require/e404.php</i>. 
+			</li>
+			<li>Paste the following code to the beginning of the file:<br />
+				<textarea spellcheck='false' style='width:700px;height: 100px;font-size:10pt;'>&lt;?php //> 
+		$mht_dn= explode('/',dirname(__FILE__));
+		unset($mht_dn[count($mht_dn)-1]);
+		unset($mht_dn[count($mht_dn)-1]);
+		include_once(JOIN('/',$mht_dn).'/HTracer_renamed/HTracer.php');
+		htracer_start();
+?></textarea><br />
+				Where HTracer_Renamed -- new name of HTracer's folder.
+			</li>
+			<li>
+				At the end of this file, before <i>?></i>, paste <i>hkey_connect_to_mysql(true);</i>
+			</li> 
+	</ol>
+
+    </div>
+	<div id="tabs-5">
+		<ol>
+			<li>
+				Copy HTracer's folder to the site root (usually <i>public_html</i> or <i>www</i>). For security reasons rename it.
+			</li>
+			<li>
+				Set permission 777 to the folders '<i>cash</i>', '<i>query</i>', and file '<i>last_refer.txt</i>'
+			</li>
+			<li>
+				Rename file <i>admin/auto_config0.php</i> into <i>admin/auto_config.php</i> and set it's permission 777
+			</li>
+			<li>
+				Open options (<i>http://SITE.COM/HTracer_RENAMED/admin/options.php</i>).
+				Goto MySQL section and set MySQL connection params and:
+				<ul>
+					<li>MySQL=Forced</li>  
+					<li>SetNames=utf8</li>
+				</ul>
+			</li>	
+			<li>
+				Open file <i>index.php</i> in the site root (usually <i>public_html/index.php</i> or <i>www/index.php</i>)
+				If index.php are zended (This is Zend File... bla bla bla), then goto <a href="#index_zend">here</a> 
+			</li>	
+			<li>Paste into <i>index.php</i> this code:
+<BR />
+<textarea spellcheck='false' style='width:700px;height: 100px;font-size:10pt;'>&lt;?php /*>*/ 
+	include_once('HTracer_renamed/HTracer.php');
+	htracer_start();
+?></textarea>
+<BR />
+				Where HTracer_Renamed -- new name of HTracer's folder.
+			</li>
+		</ol>
+				<br />
+				<hr />
+				<br />
+				<h3>When an error occurs</h3>
+				<ul>
+					<li>In CMS options disable GZip</li>
+					<li>Check root to the HTracer.php</li>
+					<li>Move <i>htracer_start();</i>in place before the output HTML<br />
+						For example, if your engine use Smarty, it output the HTML in a string like <i>$smarty->display("index.tpl.html");</i><br />
+						<pre>
+	htracer_start();
+	$smarty->display("index.tpl.html");
+						</pre>
+						If this code will not work
+						instead of <i>htracer_start();</i> use <i>ob_start();</i> 
+						and after HTML output write<i>htracer_ob_end();</i> 	
+						<pre>
+	ob_start();
+	$smarty->display("index.tpl.html");
+	htracer_ob_end();
+						</pre>
+					</li>
+			<li><b>Use alternative places to insert code</b></li>
+				</ul>
+				<br />
+				<hr />
+				<br />
+
+				<h3>Alternative places:</h3>
+				<ul>
+					<li>
+						<a name="index_zend"></a>
+						If the file index.php are zended, find a php file that does not zended, but always used and paste the code to connect HTracer there.<br />
+						For example, fit the file in which you provide access to MySQL during the installation of CMS. 
+						(almost always be at the root of the site and in its name contains "config"). For HostCMS use MainClasses.php.
+					</li>	
+					<li>
+						Before the conclusion of an HTML tag or HEAD in the corresponding template file (usually Header.php).<br />
+					</li>
+				</ul>
+				<br />
+	</div>
+</div>
+
+<h2>Cloud</h2>
+There are two ways to insert a cloud. The first of these selectors use, it is more simple, but can sometimes cause problems.
+<h3>CSS-selector</h3>
+Goto http://YouSite.com/HTracer_Renamed/admin/options.php and open cloud Section.
+Click on "CSS-Selector" for inline help.
+<h3>Code insertion</h3>
+Insert into the site template (theme) <i>&lt;!--the_keys_cloud--></i>. Instead this code, cloud will appear on the site.<br />
+If you see <i>"Parse error: syntax error, unexpected '&lt;'"</i>, then instead of <i>&lt;!--the_keys_cloud--></i> use <i>echo "&lt;!--the_keys_cloud-->";</i>.<br />
+If you does not know where located you site goto http://YouSite.com/HTracer_Renamed/admin/get_template_path.php<br />
+
+</body>
+</html>

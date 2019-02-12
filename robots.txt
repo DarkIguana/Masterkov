@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /o_nas
+Host: masterkov.ru
+
+User-agent: googlebot
+Disallow: /o_nas
+
+User-agent: *
+Disallow: /o_nas
+Sitemap: http://masterkov.ru/sitemap.xml
