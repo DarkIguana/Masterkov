@@ -1,0 +1,12 @@
+<meta name="google-site-verification" content="EaWq2u85-pXAO5-KdD7uvAYQEgWDsNjNOn_R69g4wLk" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113289436-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113289436-1');
+</script>
+
