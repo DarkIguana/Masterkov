@@ -106,7 +106,7 @@ ul li{
 	background:url(../img/li1.png) no-repeat 0 10px;
 	margin-bottom:8px;
 	padding-left:22px;
-	/*line-height:22px;*/
+	line-height:22px;
 }
 ol li{
 	margin-bottom:10px;
