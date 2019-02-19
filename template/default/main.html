@@ -1,19 +1,8 @@
 <!DOCTYPE HTML>
+<!-- main.html -->
 <html lang="ru">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134226337-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-134226337-1');
-</script>
-<!-- /Google Analytics -->
-
 <title>{title}</title>
-
 {keys}
 
 <meta content="{desc}" name="description" />
@@ -44,6 +33,16 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134650274-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134650274-1');
+</script>
+
 </head>
 <body>
 	<div id="container">
@@ -60,8 +59,9 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 				<li><a href="http://masterkov.ru/kontakti#map">Контакты</a></li>
 			</ul>
 			<p class="tp">
-				<span>{block_tel_top}</span><a href="#" class="callBackLink">Заказать
-					звонок</a><i><img src="/img/map-metka.png">Москва, Анадырский пр., 21</i>
+				<span>{block_tel_top}</span>
+				<a href="mailto:info@masterkov.ru" >info@masterkov.ru</a>
+				<i><img src="/img/map-metka.png">Москва и Московская область</i>
 			</p>
 		</div>
 
@@ -87,15 +87,15 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 				<div>
 					<span style="display: inline-block;"><a style="font-size: 50px;line-height: 0.6;" href="/dizayn_proekt_kvartiri">Дизайн-проекты</a>
 					</span> 
-					<span class="price">от 700 р/м.кв </span>  
-					<a	href="/dizayn_proekt_kvartiri">Подробнее</a>
+		<!--			<span class="price">от 700 р/м.кв </span>  
+					<a	href="/dizayn_proekt_kvartiri">Подробнее</a> -->
 				</div>
 			</li>
 			<li>
 				<div>
 					<span style="display: inline-block;"><a href="/uslugi" style="font-size: 50px;line-height: 0.6;">Ремонт квартир</a></span> 
-					<span class="price">от 2000 р/м.к</span>
-					<a href="/uslugi">Подробнее</a>
+			<!--		<span class="price">от 2000 р/м.к</span>
+					<a href="/uslugi">Подробнее</a>  -->
 				</div>
 			</li>
 		</ul>
@@ -110,8 +110,8 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 				<li class="ad1">Гарантия на все <br>виды работ &ndash; 1 год</li>
 				<li class="ad2">Бесплатное составление&nbsp;сметы</li>
 				<li class="ad3">Составление<br> дизайн проекта</li>
-				<li class="ad4">Работаем строго<br> по договору</li>
-				<li class="ad5">Использование качественных материалов
+				<li class="ad4">Работаем<br>по договору</li>
+				<li class="ad5">Использование качественных материалов</li>
 			</ul>
 			<div style="clear: both"></div>
 		</div>
@@ -133,7 +133,7 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 			</p>
 
 			<div class="bp">
-				<p class="bp1">{block_adres_bottom}</p>
+				<!-- <p class="bp1">{block_adres_bottom}</p> -->
 				<p class="bp2">{block_tel_bottom}</p>
 				<p class="bp3">{block_email_bottom}</p>
 			</div>
@@ -148,14 +148,7 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 				<li><a href="/sitemap">Карта сайта</a></li>
 			</ul>
 
-			<div class="studiya" style="padding-top: 3px;">
-			<p style="margin-bottom: 5px;">Продвижение сайта</p>
-			<a target="_blank" rel="nofollow" href="http://impulse.guru/"><img width="100p" height="70" src="/template/default/img/impuls.png" alt="" /></a>
-		</div> 
-
-			<div class="counter31">
-				<img src="/template/default/img/pic31.gif" alt="" />
-			</div>
+			
 		</div>
 	</div>
 
@@ -164,12 +157,11 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 
 		<div class="blockCall">
 			<img src='/template/default/images/popup/pic21.gif' alt=""
-				class="closer21" /> <p class="blockCall-title callme">Перезвоните
-				мне</p>
-			<p class="txtP1">
-				Пожалуйста, заполните краткую контактную информацию,<br />и наши
-				сотрудники обязательно свяжутся с Вами.
-			</p>
+				class="closer21" />
+				<p class="blockCall-title callme">Обратный звонок</p>
+				<p class="txtP1">
+				Пожалуйста, заполните краткую контактную информацию, и наши сотрудники обязательно свяжутся с Вами.
+				</p>
 			<form method="post" id="callback" name="callback">
 				<table>
 					<tr>
@@ -185,11 +177,11 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 						<td>+7 <input type="text" name="phone" value="" class="w229" /></td>
 					</tr>
 					<tr>
-						<td><p>Комментарий</p></td>
+						<td><p>Комментарий&nbsp;</p></td>
 						<td><textarea rows="5" name="comment" cols="40"></textarea></td>
 					</tr>
 					<tr>
-						<td><p id="div2">Время звонка</p></td>
+						<td><p id="div2">Время звонка&nbsp;</p></td>
 						<td><select name="s" size="1"><option
 									value="В ближайшее время">В ближайшее время</option>
 								<option value="Утром">Утром</option>
@@ -330,6 +322,6 @@ script type="text/javascript" src="/template/default/js/scripts.js"></script>
 </script>
 
 </body>
-<!-- main.html -->
+
 </html>
  

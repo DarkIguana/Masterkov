@@ -1,4 +1,4 @@
-@import url("reset.css");
+.blockCall-title@import url("reset.css");
 
 html {
 	/* background: url(img/bg.jpg); */
@@ -570,8 +570,8 @@ a.rev span,a.rev:visited span {
 .blockCall-title {
 	color: #000000;
 	font-size: 28px;
-	/* margin-left: 30%; */
-	text-align:  center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .blockCall table {
@@ -579,7 +579,6 @@ a.rev span,a.rev:visited span {
 	margin-left: 25px;
 	color: #000;
 	margin-top: -30px;
-	width: 100%; 
 }
 
 .blockCall table td {

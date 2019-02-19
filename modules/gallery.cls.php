@@ -30,7 +30,7 @@ class gallery {
 					$desc = $row ['desc'];
 					$sql2 = mysql_query ( "select * from `gallery_img` where `iditem`='{$row['id']}'  and `itog`=0 order by `osn` desc, `pos` asc" );
 					if (is_resource ( $sql2 ) && ($num = mysql_num_rows ( $sql2 )) > 0) {
-						$out .= '<p class="h6">Фото</p>';
+						$out .= '<p class="h6">Дизайн проект</p>';
 						$out .= '<ul>';
 						$i = 0;
 						$v = 0;
@@ -66,7 +66,7 @@ class gallery {
 					if (is_resource ( $sql2 ) && ($num = mysql_num_rows ( $sql2 )) > 0) {
 						$i = 0;
 						$v = 0;
-						$out .= '<p class="h6">Дизайн проект</p>';
+						$out .= '<p class="h6">Фото</p>';
 						$out .= '<ul>';
 						while ( ($img = mysql_fetch_assoc ( $sql2 )) != false ) {
 							$image = array (
@@ -96,7 +96,7 @@ class gallery {
 				$out .='<div class="dslBlock">'. $desc.'</div>';
 			}
 		} else {
-			self::$TitlePage = 'Дизайн проект квартир. Лучшие дизайны за 2015 год';
+			self::$TitlePage = 'Портфолио';
 			BreadcrumbsTitle::set ( 'Лучшие дизайн проекты квартир от компании Мастерков' );
 			$_SESSION['Titles']['desc']='Примеры лучших дизайн проектов квартир от компании Мастерков за 2015-2016 год. Разработка проекта и ремонт квартир под ключ от недорогих до элитных, фото дизайна квартиры, комнаты, планировка квартиры.';
 			$_SESSION['Titles']['keys']='лучшие дизайн проекты квартир, лучшие дизайн проекты квартир 2016';
