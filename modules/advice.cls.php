@@ -16,7 +16,7 @@ class advice extends glb {
 					<p><a href="/advice">'.$row['name'].'</a></p>
 		<p>'.$row['text'].'</p>
 	<ul>
-			<li><a href="#" class="refresh"><span>Следующий совет</span></a></li>
+			<li><a href="#" class="refresh"><span>Следующий совет</span></a></li> 
 			<li><div><a href="/advice">Все советы</a></div></li>			
 		
 				

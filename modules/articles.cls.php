@@ -103,7 +103,7 @@ class articles {
 				$out .= '
                                 ' . $row ['desc'] . '&nbsp;&nbsp;
                                 
-                          <p align="right" class="rightLink"><a href="/articles">Вернуться в раздел "Советы"</a></p>
+                          <p align="right" class="rightLink"><a href="/articles">Вернуться в раздел "Статьи"</a></p>
                                 ';
 			} else {
 				

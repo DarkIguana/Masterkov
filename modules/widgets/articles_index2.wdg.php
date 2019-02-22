@@ -8,12 +8,13 @@ class articles_index2 {
 			
 			while (($row = mysql_fetch_assoc($sql))!=false){
 				$out.='<div class="advice2">
-                	 <!-- <img src="template/default/img/advice-pic2.png" alt="" class="advice-pic">
-                    <div class="advice-ttl"><img src="template/default/img/advice-ttl2.png" alt=""></div> -->
-                    <div class="advice-link"><a href="?articles='.$row['id'].'">'.$row['name'].'</a></div>
-                    <p>'.$row['notice'].'</p>
-                    <a href="#" class="advice-refresh" update="advice2" row="'.$row['id'].'"><img src="template/default/img/ico-refresh.png" alt="">Следующий совет</a>
-                </div>';
+                				<div class="advice-link"><a href="?articles='.$row['id'].'">'.$row['name'].'</a></div>
+                   				<p>'.$row['notice'].'</p>
+						<div class="adviceGoldLink"><a  href="/advice">Все советы</a></div>	
+
+                  				 <!-- <a href="#" class="advice-refresh" update="advice2" row="'.$row['id'].'">
+							<img src="template/default/img/ico-refresh.png" alt="">Следующий совет </a> -->
+              				  </div>';
 			}
 			
 		

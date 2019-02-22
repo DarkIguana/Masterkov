@@ -332,7 +332,15 @@ a.rev span,a.rev:visited span {
 .text3 b{
 	color: #9b7225;
 }
-
+.text3 ul li div a{
+	color: #9b7225!important;
+}
+.text3 ul li div {
+	display: block;
+	float: left;
+	padding: 4px 0 3px 21px;
+	font-size: 14px;
+}
 /* .text4 { */
 	/* float: left; */
 	/* background: url(img/bg91-2.png) no-repeat 17px 10px; */
@@ -342,7 +350,7 @@ a.rev span,a.rev:visited span {
 
 .text4 {
 	float: left;
-	background: url(/img/lamp.png) no-repeat 17px 10px;
+	background: url(/img/lamp.png) no-repeat 17px 10px; 
 	padding: 37px 0 20px 120px;
 	width: 320px;
 }
@@ -407,7 +415,7 @@ a.rev span,a.rev:visited span {
 /* } */
 
 .text4 ul li div {
-	background: url(/img/light-bulb.png) no-repeat left top;
+	/* background: url(/img/light-bulb.png) no-repeat left top;*/
 	display: block;
 	float: left;
 	padding: 4px 0 3px 21px;
@@ -438,7 +446,10 @@ a.rev span,a.rev:visited span {
 	position: relative;
 	top: 3px;
 }
-
+.adviceGoldLink a{
+	color: #9b7225!important;
+	font-size: 14px;
+}
 .foot {
 	height: 136px;
 	position: relative;
@@ -925,9 +936,9 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 	text-align: center;
 	font: italic 18px 'Times New Roman';
 	color: #b78e40;
-	background: url(/template/default/img/bg210a.png) no-repeat left top;
+	/* background: url(/template/default/img/bg210a.png) no-repeat left top;
 	text-decoration: none;
-	text-shadow: 1px 1px #010101
+	text-shadow: 1px 1px #010101 */
 }
 
 .morePhotos a:hover {

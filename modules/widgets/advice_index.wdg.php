@@ -8,16 +8,14 @@ class advice_index {
 			
 			while (($row = mysql_fetch_assoc($sql))!=false){
 				$out.='	<div class="text4" ><b>Советы от Мастерков</b>
-					<p><a class="lrefr" href="/advice">'.$row['name'].'</a></p>
-		<p>'.$row['text'].'</p>
-	<ul>
-			<li><a href="#" class="refresh"><span>Следующий совет</span></a></li>
-			<li><div><a href="/advice">Все советы</a></div></li>			
+						<p><a class="lrefr" href="/advice">'.$row['name'].'</a></p>
+						<p>'.$row['text'].'</p>
+						<ul>
+							<li><div><a href="/advice">Все советы</a></div></li>			
 		
+						</ul>
 				
-	</ul>
-				
-	</div>';
+					</div>';
 			}
 			
 		
