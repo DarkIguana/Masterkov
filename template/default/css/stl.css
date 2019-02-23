@@ -270,8 +270,11 @@ ol li{
 .center{
 	width:960px;
 	margin:0 auto;
-	padding:0 0 230px;
+/*	padding:0 0 230px; 
 	min-height:550px;
+*/
+	padding:0 0 30px;
+	min-height:350px;
 }
 .center .welcom{
 	position:relative;
