@@ -13,9 +13,13 @@ class wdg_gallery {
 			while ( ($row = mysql_fetch_assoc ( $sql )) != false ) {
 				$date = strtotime ( $row ['date'] );
 				$script .= 'var img'.$row['id'].' = new Image(); img.src="/thumbs/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '";';
-				$out .= '		<li>
-						<a href="?gallery=' . $row ['iditem'] . '"><img class="black_white" black="/thumbs/black/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '" source="/thumbs/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '" src="/thumbs/black/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '" alt="">
+				$out .= '		<li class="galerySlider">
+						<a href="?gallery=' . $row ['iditem'] . '">
+	<img black="/thumbs/black/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '"
+	 source="/thumbs/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '"
+	 src="/thumbs/crop/227x162/files/gallery/o_' . $row ['id'] . '.' . $row ['ext'] . '" alt="">
 						</a></li>';
+		/* class="black_white"	/thumbs/black/		 */
 			}
 			$script.='</script>';
 			$out .= '</ul>

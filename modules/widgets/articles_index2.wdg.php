@@ -10,7 +10,7 @@ class articles_index2 {
 				$out.='<div class="advice2">
                 				<div class="advice-link"><a href="?articles='.$row['id'].'">'.$row['name'].'</a></div>
                    				<p>'.$row['notice'].'</p>
-						<div class="adviceGoldLink"><a  href="/advice">Все советы</a></div>	
+						<div class="adviceGoldLink"><a  href="/advice">Все статьи</a></div>	
 
                   				 <!-- <a href="#" class="advice-refresh" update="advice2" row="'.$row['id'].'">
 							<img src="template/default/img/ico-refresh.png" alt="">Следующий совет </a> -->

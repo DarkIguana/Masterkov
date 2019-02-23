@@ -274,7 +274,7 @@ function TKeys()
 			else if(code=='403')
 				code2='Запрещено';
 			else if(code=='404')
-				code2='Страница не найдена';	
+				code2='Страница --------------------- не найдена';	
 			else if(code=='405')
 				code2='Метод не применим (метод HEAD)';
 			else if(code=='408')

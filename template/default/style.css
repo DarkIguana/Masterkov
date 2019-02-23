@@ -228,9 +228,14 @@ body {
 
 .text2 ul li img {
 	display: block;
-	border: 1px solid #000;
+	border: 0px solid #000;
+	
 }
-
+.text2 ul li img:hover {
+	border: 0px solid #000;
+	cursor: zoom-in;
+	 transform: scale(1.05); 
+}
 .text2 .handler {
 	background: url(img/bg960.gif) no-repeat center;
 	height: 8px;
@@ -243,7 +248,15 @@ body {
 	left: 50%;
 	margin-left: -15px;
 	top: -12px;
-	cursor: pointer
+	cursor: pointer ; 
+}
+.text2 ul li a {
+	margin: 2px;
+	position: absolute;
+}
+.text2 ul li a:hover {
+	margin: 0px;
+	
 }
 
 /* a.refresh,a.refresh:visited { */
@@ -960,15 +973,24 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 	text-align: center;
 	font: italic 18px 'Times lessPhotos Roman';
 	color: #b78e40;
-	background: url(/template/default/img/bg210b.png) no-repeat left top;
+	/* background: url(/template/default/img/bg210b.png) no-repeat left top;
 	text-decoration: none;
-	text-shadow: 1px 1px #010101
+	text-shadow: 1px 1px #010101 */
 }
 
 .lessPhotos a:hover {
 	color: #000;
 	background-position: left bottom;
 }
+/*.galerySlider:hover {
+	 transform: scale(1.05); 
+	cursor:url(/highslide/graphics/zoomin.cur) !important;
+}
+*/
+/* .galerySlider img {
+	border: 20px solid;
+	cursor:url(/highslide/graphics/zoomin.cur) !important;
+} */
 
 .dslBlock {
 	padding: 30px 0;
@@ -1121,6 +1143,11 @@ a.rev, a.rev:visited, .text4 ul li div {font-size:14px;}
 	.foot ul li {padding-bottom:0; margin-bottom:-2px; background-position:left 10px; width:102px; line-height:22px;}
 .studiya {top:22px;}
 	.studiya a, .studiya a:visited {padding-top:0;}
+
+.galerySlider img:hover {
+	border: 2px solid;
+	cursor:url(/highslide/graphics/zoomin.cur) !important;
+}
 
 .tp i {font:14px 'Times New Roman'; display:block;position: relative;}
 .tp i > img{    display: inline-block;position: absolute;margin-top: -3px;margin-left: -20px;}

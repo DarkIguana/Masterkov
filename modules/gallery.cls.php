@@ -54,7 +54,7 @@ class gallery {
 						}
 						$out .= '</ul>';
 						if ($v>4){
-							$out.='<p class="morePhotos"><a href="#">Еще эскизы&hellip;</a></p><p class="lessPhotos"><a href="#">Менее эскизов&hellip;</a></p>';
+							$out.='<p class="morePhotos"><a href="#">Еще эскизы&hellip;</a></p><p class="lessPhotos"><a href="#">Свернуть эскизы&hellip;</a></p>';
 						}
 					}
 					
@@ -88,7 +88,7 @@ class gallery {
 						}
 						$out .= '</ul>';
 						if ($v>4){
-							$out.='<p class="morePhotos"><a href="#">Еще фотографии&hellip;</a></p><p class="lessPhotos"><a href="#">Менее фотографий&hellip;</a></p>';
+							$out.='<p class="morePhotos"><a href="#">Еще фотографии&hellip;</a></p><p class="lessPhotos"><a href="#">Свернуть фотографии&hellip;</a></p>';
 						}
 					}
 				}
