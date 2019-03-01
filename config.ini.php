@@ -1,6 +1,7 @@
 <?php
 $_HOST = "localhost";
-$_USER = "masterko_user";
-$_PASS = "WKJ8iirLNctd";
+$_USER = "root";
+//$_PASS = "WKJ8iirLNctd";
+$_PASS = "";
 $_DB = "masterko_bd";
 $_TEMPLATE = "default";
