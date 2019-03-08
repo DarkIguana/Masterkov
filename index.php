@@ -1,4 +1,4 @@
-<?
+<?php
 session_start ();
 session_cache_limiter ( 'nocache' );
 // header('Content-Type: text/html; charset=utf-8');

@@ -1,22 +1,18 @@
 @import url("reset.css");
 
 html {
-    /* background: url(img/bg.jpg); */
-    background: #f9f9f9;
+    background: url(../img/bg.jpg);
 }
 
 body {
     font: 16px 'Times New Roman';
-    color: #000;
-}
-.t31a1 ol li{
-    padding-bottom: 5px;
+    color: #fff;
 }
 
 @font-face {
     font-family: 'Conv_shellyallegroc';
     src: url('fonts/shellyallegroc.eot');
-    src: local('в�є'), url('fonts/shellyallegroc.woff') format('woff'),
+    src: local('РІпїЅС”'), url('fonts/shellyallegroc.woff') format('woff'),
         url('fonts/shellyallegroc.ttf') format('truetype'),
         url('fonts/shellyallegroc.svg') format('svg');
     font-weight: normal;
@@ -53,9 +49,8 @@ body {
 
 .top ul li {
     float: left;
-    padding: 3px 22px 13px 0;
-    /* background: url(img/pic4a.gif) no-repeat right 12px; */
-    background: url(img/pic4a.png) no-repeat right 12px;
+    padding: 0 22px 13px 0;
+    background: url(../img/pic4a.gif) no-repeat right 12px;
     margin-right: 15px;
     margin-bottom: 0;
     padding-bottom: 10px
@@ -87,10 +82,9 @@ body {
 
 .tp a,.tp a:visited {
     font-size: 14px;
-    border-bottom: 1px solid;
-    text-shadow: 0px 0px #616161;
+    border-bottom: 1px dotted;
+    text-shadow: 1px 1px #616161;
     text-decoration: none;
-    font-style: none;
 }
 
 .tp a:hover {
@@ -116,7 +110,7 @@ body {
 }
 
 .text1 a,.text1 a:visited {
-    background: url(img/bg290.png) no-repeat;
+    background: url(../img/bg290.png) no-repeat;
     width: 245px;
     height: 144px;
     display: block;
@@ -124,14 +118,14 @@ body {
     margin-right: -18px;
     font: bold italic 24px 'Times New Roman';
     text-shadow: 1px 1px #675838;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     text-align: center;
     padding: 47px 0 0 45px;
 }
 
 .text1 a:hover {
-    background: url(img/bg290-on.png) no-repeat;
+    background: url(../img/bg290-on.png) no-repeat;
 }
 
 .text1 p {
@@ -151,7 +145,7 @@ body {
 
 .list470 li {
     float: left;
-    background: url(img/pic470-2.jpg) no-repeat;
+    background: url(../img/pic470-2.jpg) no-repeat;
     width: 470px;
     height: 154px;
     overflow: hidden;
@@ -174,7 +168,7 @@ body {
 }
 
 .list470 li.block470-1 {
-    background: url(img/pic470-1.jpg) no-repeat;
+    background: url(../img/pic470-1.jpg) no-repeat;
     margin-right: 20px;
 }
 
@@ -228,16 +222,11 @@ body {
 
 .text2 ul li img {
     display: block;
-    border: 0px solid #000;
+    border: 1px solid #000;
+}
 
-}
-.text2 ul li img:hover {
-    border: 0px solid #000;
-    cursor: zoom-in;
-    transform: scale(1.05); 
-}
 .text2 .handler {
-    background: url(img/bg960.gif) no-repeat center;
+    background: url(../img/bg960.gif) no-repeat center;
     height: 8px;
     clear: both;
     position: relative
@@ -248,27 +237,11 @@ body {
     left: 50%;
     margin-left: -15px;
     top: -12px;
-    cursor: pointer ; 
+    cursor: pointer
 }
-.text2 ul li a {
-    margin: 2px;
-    position: absolute;
-}
-.text2 ul li a:hover {
-    margin: 0px;
-
-}
-
-/* a.refresh,a.refresh:visited { */
-/* background: url(img/bg22a.gif) no-repeat left 5px; */
-/* display: block; */
-/* float: left; */
-/* padding: 5px 0 3px 32px; */
-/* font-size: 12px; */
-/* } */
 
 a.refresh,a.refresh:visited {
-    background: url(/img/refresh.png) no-repeat left 5px;
+    background: url(../img/bg22a.gif) no-repeat left 5px;
     display: block;
     float: left;
     padding: 5px 0 3px 32px;
@@ -280,16 +253,8 @@ a.refresh span,a.refresh:visited span {
 }
 
 
-/* a.rev,a.rev:visited { */
-/* background: url(img/bg22a.gif) no-repeat left 5px; */
-/* display: block; */
-/* float: left; */
-/* padding: 5px 0 3px 32px; */
-/* font-size: 12px; */
-/* } */
-
 a.rev,a.rev:visited {
-    background: url(/img/refresh.png) no-repeat left 5px;
+    background: url(../img/bg22a.gif) no-repeat left 5px;
     display: block;
     float: left;
     padding: 5px 0 3px 32px;
@@ -300,24 +265,16 @@ a.rev span,a.rev:visited span {
     text-decoration: underline;
 }
 
-/* .text3 { */
-/* float: left; */
-/* background: url(img/bg91-1.png) no-repeat 22px 1px; */
-/* padding: 37px 10px 58px 131px; */
-/* width: 380px; */
-/* } */
-
 .text3 {
     float: left;
-    background: url(/img/PenBox.png) no-repeat 22px 1px;
+    background: url(../img/bg91-1.png) no-repeat 22px 1px;
     padding: 37px 10px 58px 131px;
     width: 380px;
 }
 
-
 .text3 b {
     font: 36px 'Conv_shellyallegroc';
-    color: #000;
+    color: #fff;
     display: block;
     padding-bottom: 22px;
 }
@@ -325,7 +282,7 @@ a.rev span,a.rev:visited span {
 .text3 p {
     padding: 0 30px 20px 10px;
     font-style: italic;
-    color: #000;
+    color: #fcfcfc
 }
 
 .text3 p span {
@@ -342,45 +299,24 @@ a.rev span,a.rev:visited span {
 .text3 a.refresh,.text3 a.refresh:visited {
     margin-left: 7px;
 }
-.text3 b{
-    color: #9b7225;
-}
-.text3 ul li div a{
-    color: #9b7225!important;
-}
-.text3 ul li div {
-    display: block;
-    float: left;
-    padding: 4px 0 3px 21px;
-    font-size: 14px;
-}
-/* .text4 { */
-/* float: left; */
-/* background: url(img/bg91-2.png) no-repeat 17px 10px; */
-/* padding: 37px 0 20px 120px; */
-/* width: 320px; */
-/* } */
 
 .text4 {
     float: left;
-    background: url(/img/lamp.png) no-repeat 17px 10px; 
+    background: url(../img/bg91-2.png) no-repeat 17px 10px;
     padding: 37px 0 20px 120px;
     width: 320px;
 }
 
 .text4 b {
     font: 36px 'Conv_shellyallegroc';
-    color: #000;
+    color: #fff;
     display: block;
     padding-bottom: 10px;
-}
-.text4 b{
-    color: #9b7225;
 }
 
 .text4 p {
     padding: 0 10px 18px 10px;
-    color: #000;
+    color: #fff;
     font-size: 14px;
     line-height: 20px
 }
@@ -419,37 +355,23 @@ a.rev span,a.rev:visited span {
     float: left;
 }
 
-/* .text4 ul li div { */
-/* background: url(img/pic14a.gif) no-repeat left top; */
-/* display: block; */
-/* float: left; */
-/* padding: 4px 0 3px 21px; */
-/* font-size: 12px; */
-/* } */
-
 .text4 ul li div {
-    /* background: url(/img/light-bulb.png) no-repeat left top;*/
+    background: url(../img/pic14a.gif) no-repeat left top;
     display: block;
     float: left;
     padding: 4px 0 3px 21px;
     font-size: 12px;
 }
 
-
-.text4 ul li div a{
-    color: #9b7225!important;
-}
 .text5 {
     clear: both;
     border-top: 1px solid #515151;
     border-bottom: 1px solid #515151;
-    /* padding: 15px 0 15px 209px */
-    padding: 10px 0px;
+    padding: 15px 0 15px 209px
 }
 
 .text5 .t1 {
-    /* color: #838383; */
-    color: #000;
+    color: #838383;
     display: block;
     padding-right: 7px
 }
@@ -459,10 +381,7 @@ a.rev span,a.rev:visited span {
     position: relative;
     top: 3px;
 }
-.adviceGoldLink a{
-    color: #9b7225!important;
-    font-size: 14px;
-}
+
 .foot {
     height: 136px;
     position: relative;
@@ -504,14 +423,12 @@ a.rev span,a.rev:visited span {
     top: 26px;
     width: 260px;
     font-size: 12px;
-    column-gap: 60px;
-    column-count: 2;
 }
 
 .foot ul li {
     float: left;
     width: 115px;
-    background: url(img/pic4b.gif) no-repeat left 7px;
+    background: url(../img/pic4b.gif) no-repeat left 7px;
     padding: 0 0 10px 11px
 }
 
@@ -594,8 +511,7 @@ a.rev span,a.rev:visited span {
 .blockCall-title {
     color: #000000;
     font-size: 28px;
-    /* margin-left: 30%; */
-    text-align:  center;
+    margin-left: 30%;
 }
 
 .blockCall table {
@@ -603,7 +519,6 @@ a.rev span,a.rev:visited span {
     margin-left: 25px;
     color: #000;
     margin-top: -30px;
-    width: 100%; 
 }
 
 .blockCall table td {
@@ -849,8 +764,7 @@ a.rev span,a.rev:visited span {
 }
 
 .t31a2 {
-
-    float: left; 
+    float: left;
     width: 271px;
     padding: 20px 0;
     font: 16px 'Times New Roman';
@@ -866,7 +780,7 @@ a.rev span,a.rev:visited span {
     font: italic 24px 'Times New Roman';
     color: #010101;
     text-decoration: none;
-    text-shadow: 1px 1px #000
+    text-shadow: 1px 1px #fff
 }
 
 .cb31:hover {
@@ -875,8 +789,7 @@ a.rev span,a.rev:visited span {
 }
 
 .t31a2 p {
-    /* line-height: 25px; */
-    line-height: 1;
+    line-height: 25px;
 }
 
 .t31a2 p span {
@@ -949,13 +862,13 @@ a.refresh,a.refresh:visited,.text4 ul li div {
     text-align: center;
     font: italic 18px 'Times New Roman';
     color: #b78e40;
-    /* background: url(/template/default/img/bg210a.png) no-repeat left top;
+    background: url(/template/default/img/bg210a.png) no-repeat left top;
     text-decoration: none;
-    text-shadow: 1px 1px #010101 */
+    text-shadow: 1px 1px #010101
 }
 
 .morePhotos a:hover {
-    color: #000;
+    color: #fff;
     background-position: left -41px;
 }
 
@@ -973,24 +886,15 @@ a.refresh,a.refresh:visited,.text4 ul li div {
     text-align: center;
     font: italic 18px 'Times lessPhotos Roman';
     color: #b78e40;
-    /* background: url(/template/default/img/bg210b.png) no-repeat left top;
+    background: url(/template/default/img/bg210b.png) no-repeat left top;
     text-decoration: none;
-    text-shadow: 1px 1px #010101 */
+    text-shadow: 1px 1px #010101
 }
 
 .lessPhotos a:hover {
-    color: #000;
+    color: #fff;
     background-position: left bottom;
 }
-/*.galerySlider:hover {
-         transform: scale(1.05); 
-        cursor:url(/highslide/graphics/zoomin.cur) !important;
-}
-*/
-/* .galerySlider img {
-        border: 20px solid;
-        cursor:url(/highslide/graphics/zoomin.cur) !important;
-} */
 
 .dslBlock {
     padding: 30px 0;
@@ -1032,7 +936,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 
 .formBlock1 table td ul li input {
     padding: 6px;
-    background: transparent;
+    background: #fff;
     border: none;
     box-shadow: inset 1px 1px #a1a2a4;
     width: 260px;
@@ -1040,7 +944,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 
 .formBlock1 table td textarea {
     padding: 6px;
-    background: #transparent;
+    background: #fff;
     border: none;
     box-shadow: inset 1px 1px #a1a2a4;
     width: 465px;
@@ -1059,7 +963,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
     cursor: pointer;
     padding-bottom: 7px;
     font: italic 16px 'Times New Roman';
-    color: #000;
+    color: #fff;
     text-shadow: 1px 1px #635029;
     display: block
 }
@@ -1069,7 +973,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 }
 
 .copy {
-    font-weight: normal; 
+    font-weight: bold;
     line-height: 19px;
 }
 
@@ -1107,7 +1011,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 .top ul li {padding-bottom:15px;}
 .top ul li.w2 {margin-left:0;}
 
-.t31a1 {float:left; width:610px; padding:17px 0 50px; font:18px 'Times New Roman';}
+.t31a1 {float:left; width:690px; padding:17px 0 50px; font:18px 'Times New Roman';}
 .t31a1 p {}
 .t31a1 p.title31a {font:italic 33px 'Times New Roman'; color:#c5a051; padding-bottom:15px;}
 .t31a1 h1.title31a {font:italic 33px 'Times New Roman'; color:#c5a051; padding-bottom:15px; margin-top:30px;}
@@ -1119,10 +1023,10 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 .adv31 p span a:hover, .t31a2 p a:hover {color:#a6a6a6;}
 .adv31 ul {padding:13px 22px 17px}
 .adv31 ul li {background:url(/template/default/img/pic20a.gif) no-repeat left 2px; padding:0 0 9px 33px;}
-.t31a2 {float:right; width:271px; padding:20px 0; font:16px 'Times New Roman';}
-.cb31, .cb31:visited {display:block; width:271px; height:61px; background:url(/template/default/img/bg271.png) no-repeat; text-align:center; padding:60px 0; font:italic 24px 'Times New Roman'; color:#010101; text-decoration:none; text-shadow:1px 1px #000}
+.t31a2 {float:left; width:271px; padding:20px 0; font:16px 'Times New Roman';}
+.cb31, .cb31:visited {display:block; width:271px; height:61px; background:url(/template/default/img/bg271.png) no-repeat; text-align:center; padding:60px 0; font:italic 24px 'Times New Roman'; color:#010101; text-decoration:none; text-shadow:1px 1px #fff}
 .cb31:hover {background:url(/template/default/img/bg271on.png) no-repeat; color:#000}
-.t31a2 p {line-height:1;}
+.t31a2 p {line-height:25px;}
 .t31a2 p span {font:italic 22px 'Times New Roman'; display:block; padding-bottom:15px;}
 .t31a2 p a, .t31a2 p a:visited {color:#c5a051}
 
@@ -1137,21 +1041,16 @@ a.rev, a.rev:visited, .text4 ul li div {font-size:14px;}
 .list470 li div a, .list470 li div a:visited {text-decoration:none;}
 .list470 li a:hover, .list470 li div a:hover {color:#a27329;}
 
-.copy {font-weight:normal; line-height:19px;}
+.copy {font-weight:bold; line-height:19px;}
 .copy span {font-size:14px; padding-top:8px; font-weight:normal}
 .foot ul {left:476px; top:33px; font-size:14px; margin:-9px 0 30px 14px}
 .foot ul li {padding-bottom:0; margin-bottom:-2px; background-position:left 10px; width:102px; line-height:22px;}
 .studiya {top:22px;}
 .studiya a, .studiya a:visited {padding-top:0;}
 
-.galerySlider img:hover {
-    border: 2px solid;
-    cursor:url(/highslide/graphics/zoomin.cur) !important;
-}
+.tp i {font:14px 'Times New Roman'; display:block}
 
-.tp i {font:14px 'Times New Roman'; display:block;position: relative;}
-.tp i > img{    display: inline-block;position: absolute;margin-top: -3px;margin-left: -20px;}
-.contentTable { background:transparent; width:100%; margin:30px 0}
+.contentTable { background:#373737; width:100%; margin:30px 0}
 .contentTable th {font:17px 'Times New Roman'; border-bottom:1px solid #616161; padding:21px 18px}
 .contentTable td {font:15px 'Times New Roman'; text-align:center; padding:14px 18px 15px; border-bottom:1px solid #616161; vertical-align:top; text-align: left;}				
 
@@ -1162,42 +1061,36 @@ ul.gallery1 {margin:0; padding:0}
 .gallery1 li img {display:block; width:220px; height:162px;}
 
 /*blocks 09.08.2016*/			
-.block9a {background:#f2f2f2;color: #000; clear:both; padding:0 20px 15px 20px; margin:0 0 30px}
+.block9a {background:#191919; clear:both; padding:0 20px 15px 20px; margin:0 0 30px}
 .block9a ul {}
 .block9a ul li {float:left; width:17%; padding:89px 1% 0; margin-left:1%; text-align:center}
 .block9a ul li:last-child {margin-left:5%; width:13%}
-/* .block9a ul li.ad1 {background:url(/template/default/img/h54-1.jpg) no-repeat center 11px} */
-/* .block9a ul li.ad2 {background:url(/template/default/img/h54-2.jpg) no-repeat center 11px} */
-/* .block9a ul li.ad3 {background:url(/template/default/img/h54-3.jpg) no-repeat center 11px}								 */
-/* .block9a ul li.ad4 {background:url(/template/default/img/h54-4.jpg) no-repeat center 11px} */
-/* .block9a ul li.ad5 {background:url(/template/default/img/h54-5.jpg) no-repeat center 11px}								 */
-
-.block9a ul li.ad1 {background:url(/img/01.png) no-repeat center 11px}
-.block9a ul li.ad2 {background:url(/img/02.png) no-repeat center 11px}
-.block9a ul li.ad3 {background:url(/img/03.png) no-repeat center 11px}								
-.block9a ul li.ad4 {background:url(/img/04.png) no-repeat center 11px}
-.block9a ul li.ad5 {background:url(/img/roller.png) no-repeat center 11px}		
+.block9a ul li.ad1 {background:url(/template/default/img/h54-1.jpg) no-repeat center 11px}
+.block9a ul li.ad2 {background:url(/template/default/img/h54-2.jpg) no-repeat center 11px}
+.block9a ul li.ad3 {background:url(/template/default/img/h54-3.jpg) no-repeat center 11px}								
+.block9a ul li.ad4 {background:url(/template/default/img/h54-4.jpg) no-repeat center 11px}
+.block9a ul li.ad5 {background:url(/template/default/img/h54-5.jpg) no-repeat center 11px}								
 
 
 .sidebar .block9a {margin-right:15px;}
 .sidebar .block9a ul li {float:none; width:auto; padding:89px 1% 0; margin:0 0 20px}		
 
-.block9b {background:#191919;display:none;}
+.block9b {background:#191919}
 .block9b .options {margin:0; padding:0 0 0 10px; font-size:16px;}
 .block9b .options li {float:left; list-style:none; background:none; padding:10px 0 23px;}
 .block9b .options li a, .block9b .options li a:visited {display:block; float:left; padding:4px 35px; text-decoration:none}
 .block9b .options li .opt1 {background:url(/template/default/img/bg289.png) no-repeat left center; }
 .block9b .options li .opt2 {background:url(/template/default/img/bg299.png) no-repeat left center; }
-.fbf {clear:both; background:transparent; border:1px solid #c2af63; margin:0 9px 30px; padding:0 0 45px}
+.fbf {clear:both; background:#191919; border:1px solid #c2af63; margin:0 9px 30px; padding:0 0 45px}
 .fbf table {margin:0 auto 19px; width:70%}
 .fbf caption {font:italic 18px 'Times New Roman'; padding:0 0 26px}
 .fbf caption span {display:block; padding:22px 0 3px; font-size:30px;}
 
-.fbf td input {width:246px; padding:0 5px; height:42px; line-height:1; border-radius:10px; color:#969696; font:italic 16px 'Times New Roman'; border:1px solid #ccc; border-radius:7px;}
+.fbf td input {width:246px; padding:0 5px; height:42px; line-height:1; border-radius:10px; color:#969696; font:italic 16px 'Times New Roman'; border:none; border-radius:7px;}
 .fbf td input:first-child {margin-right:10px;}
 
 
-.fbf em input {height:58px; border:1px solid #dbcc93; cursor:pointer; border-radius:6px; font:italic 24px 'Times New Roman'; color:#000; display:block; margin:0 auto; padding:0 68px; transition:all .2s ease;
+.fbf em input {height:58px; border:1px solid #dbcc93; cursor:pointer; border-radius:6px; font:italic 24px 'Times New Roman'; color:#fff; display:block; margin:0 auto; padding:0 68px; transition:all .2s ease;
                background: -moz-linear-gradient(270deg, rgba(224,198,101,1) 0%, rgba(157,105,2,1) 100%); 
                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(224,198,101,1)), color-stop(100%, rgba(157,105,2,1))); 
                background: -webkit-linear-gradient(270deg, rgba(224,198,101,1) 0%, rgba(157,105,2,1) 100%);
@@ -1209,6 +1102,104 @@ ul.gallery1 {margin:0; padding:0}
 .fbf em input:hover {opacity:.8}
 .h2{
     font: 24px/22px "Times New Roman", Times, serif;
-    color: #000;
+    color: #fff;
     margin: 0 0 24px;
+}
+
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 627px;
+    height: 291px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 980px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 980px;
+    height: 170px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    width: 980px;
+    height: 170px;
+
+}
+
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 245px;
+    height: 170px;
+    position:relative;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    width: 39px;
+    height: 41px;
+    cursor: pointer;
+    background: url(/template/default/img/a39r.png) no-repeat left top;
+    z-index:1000;
+    position:absolute; 
+    right:-5px;
+    top:65px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {background: url(/template/default/img/a39r-on.png) no-repeat left top;}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {background: url(/template/default/img/a39l-on.png) no-repeat left top;}
+
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    width: 39px;
+    height: 41px;
+    cursor: pointer;
+    background: url(/template/default/img/a39l.png) no-repeat left top;
+    z-index:1000;
+    position:absolute; 
+    left:-17px;
+    top:65px;
+    display:block;
 }

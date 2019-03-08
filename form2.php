@@ -69,7 +69,7 @@ if (count ( $_POST ) > 0) {
 	}
 }
 function emailAdmin() {
-	 return 'info@masterkov.ru';
+	 return 'masterkov.ru@gmail.ru'; 
 	$sql = mysql_query ( "select `value` from `site_setting` where `option`='email_admin' limit 1" );
 	if (mysql_num_rows ( $sql ) > 0) {
 		$row = mysql_fetch_array ( $sql, MYSQL_ASSOC );

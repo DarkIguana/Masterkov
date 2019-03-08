@@ -152,7 +152,7 @@ function send_rem() {
 			if (res.success) {
 				$('#order_rem').trigger('reset');
 				dialogError('Спасибо. Ваша заявка успешно отправлена');
-				yaCounter26072727.reachGoal('zayavka_is_gallerii');
+				//yaCounter26072727.reachGoal('zayavka_is_gallerii');
 			} else {
 				if (res.msg) {
 					dialogError(res.msg);

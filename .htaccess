@@ -2,14 +2,14 @@ php_value xcache.cacher Off
 php_value xcache.stat Off
 php_value xcache.optimizer Off
 
-php_value sendmail_from "info@mastersb.ru"
-php_value sendmail_path "/usr/sbin/sendmail -t -i -f info@mastersb.ru"
+php_value sendmail_from "info@masterkov.ru"
+php_value sendmail_path "/usr/sbin/sendmail -t -i -f info@masterkov.ru"
 
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^www.mastersb\.ru$ [NC]
-RewriteRule ^(.*)$ http://mastersb.ru/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www.mastersb\.ru$ [NC]
+#RewriteRule ^(.*)$ http://mastersb.ru/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
