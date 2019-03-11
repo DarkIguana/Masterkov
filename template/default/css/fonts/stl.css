@@ -130,7 +130,7 @@ ol li{
 	clear:both;
 	height:0;
 }
-*html .clearFix{
+* html .clearFix{
 	zoom:1;
 }
 *+html .clearFix{
@@ -958,7 +958,7 @@ ol li{
 	top: 0;
 	width: 100%;
 	background: #000;
-	filter: alpha(opacity = 50); ..
+	filter: alpha(opacity = 50);
 	-opacity: 0.5;
 	opacity: 0.5;
 	-khtml-opacity: 0.5;
@@ -1077,7 +1077,8 @@ ol li{
 #container3 {
 	position: absolute;
 	left: 0;
-	top: 182px; height∆204px;
+	top: 182px;
+                height:204px;
 	width: 100%;
 	display: none;
 	z-index: 11;

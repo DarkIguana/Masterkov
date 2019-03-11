@@ -2,8 +2,7 @@
 session_start ();
 session_cache_limiter ( 'nocache' );
 // header('Content-Type: text/html; charset=utf-8');
-require ("classes/global.php");
-
+require "classes/global.php";
 /*
 if (preg_match ( '#//|/$#', getenv ( 'REQUEST_URI' ) )) {
 	header ( "HTTP/1.x 404 Not Found" );
