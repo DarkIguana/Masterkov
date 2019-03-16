@@ -1,5 +1,12 @@
 @import url("reset.css");
-
+.clearFix:after{
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
 html {
     /* background: url(img/bg.jpg); */
     background: #f9f9f9;
@@ -31,9 +38,9 @@ body {
 }
 
 .top {
-    height: 111px;
+    height: 161px;
     position: relative;
-}
+  }
 
 .logo,.logo:visited {
     position: absolute;
@@ -45,17 +52,20 @@ body {
     font-size: 18px;
     font-style: italic;
     position: absolute;
-    left: 285px;
-    top: 27px;
-    width: 450px;
+  /*  left: 285px;
+    top: 27px; 
+    width: 450px;*/
+   background: black;
+    top: 120px; 
+    width: 100%;
     margin: 0
 }
 
 .top ul li {
     float: left;
-    padding: 3px 22px 13px 0;
+    padding: 3px 12px 13px 0;
     /* background: url(img/pic4a.gif) no-repeat right 12px; */
-    background: url(../img/pic4a.png) no-repeat right 12px;
+   /* background: url(../img/pic4a.png) no-repeat right 12px; */
     margin-right: 15px;
     margin-bottom: 0;
     padding-bottom: 10px
@@ -69,23 +79,30 @@ body {
     margin-left: 46px
 }
 
-.tp {
+.tp_contacts {
     position: absolute;
-    right: 0;
-    top: 26px;
+    right: 0; 
+    top: 46px;
     font-style: italic;
     text-align: right;
     line-height: 35px
 }
-
-.tp span {
-    display: block;
-    font-size: 30px;
-    margin-bottom: -3px;
-    letter-spacing: -1px;
+.tp {
+    position: absolute;
+    width: 400px;
+    left: 300px; 
+    top: 46px;
+    font-size: 20px;
 }
 
-.tp a,.tp a:visited {
+.tp_contacts span {
+    display: block;
+    font-size: 30px;
+  /*  margin-bottom: -3px;
+    letter-spacing: -1px; */
+}
+
+.tp_contacts a,.tp_contacts a:visited {
     font-size: 14px;
     border-bottom: 1px solid;
     text-shadow: 0px 0px #616161;
@@ -93,7 +110,7 @@ body {
     font-style: none;
 }
 
-.tp a:hover {
+.tp_contacts a:hover {
     text-shadow: none;
 }
 
@@ -129,7 +146,23 @@ body {
     text-align: center;
     padding: 47px 0 0 45px;
 }
-
+.text_1 {
+    width: 48%;
+    float: left;
+    font:18px 'Times New Roman';
+        
+}
+.text_1 h1 {
+font-size: 33px;
+    font-weight: normal;
+        font-style: italic;
+        color: #c5a051;
+}
+.text_2 {
+    width: 48%;
+    float: right;
+    
+}
 .text1 a:hover {
     background: url(../img/bg290-on.png) no-repeat;
 }
@@ -146,7 +179,8 @@ body {
 
 .list470 {
     clear: both;
-    color: #000
+    color: #000;
+    height: 130px;
 }
 
 .list470 li {
@@ -229,6 +263,7 @@ body {
 .text2 ul li img {
     display: block;
     border: 0px solid #000;
+    width: 100%;
 
 }
 .text2 ul li img:hover {
@@ -253,6 +288,7 @@ body {
 .text2 ul li a {
     margin: 2px;
     position: absolute;
+    width: 12%;
 }
 .text2 ul li a:hover {
     margin: 0px;
@@ -856,24 +892,36 @@ a.rev span,a.rev:visited span {
     font: 16px 'Times New Roman';
 }
 
-.cb31,.cb31:visited {
-    display: block;
-    width: 271px;
-    height: 61px;
-    background: url(/template/default/img/bg271.png) no-repeat;
-    text-align: center;
-    padding: 60px 0;
-    font: italic 24px 'Times New Roman';
-    color: #010101;
-    text-decoration: none;
-    text-shadow: 1px 1px #000
-}
-
 .cb31:hover {
-    background: url(/template/default/img/bg271on.png) no-repeat;
-    color: #000
+    background: gray;
+    color: #fff 
 }
-
+.cb31, .cb31:visited {
+    display:block;
+    position: absolute;
+    top: 0px;
+    width:271px; 
+    height:35px; 
+    background:black; 
+    text-align:center;
+    padding-top: 0px;
+    
+    font:italic 24px 'Times New Roman'; 
+    color:#fff; 
+    text-decoration:none; 
+    text-shadow:1px 1px #000
+}
+.t31a2 a {
+    
+    color: #fff !important; 
+}
+.t31a2 {
+    float:right; 
+    width:271px;
+    padding:5px 0; 
+    font:16px 'Times New Roman';
+    color: white;
+}
 .t31a2 p {
     /* line-height: 25px; */
     line-height: 1;
@@ -886,7 +934,7 @@ a.rev span,a.rev:visited span {
 }
 
 .t31a2 p a,.t31a2 p a:visited {
-    color: #c5a051
+    color: #fff
 }
 
 .list470 li {
@@ -1104,7 +1152,15 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 {
     padding-top:25px;
 }
-.top ul li {padding-bottom:15px;}
+.top ul li {
+    padding-left: 20px;
+    padding-bottom:15px;
+    color: #fff;
+}
+.top ul li a {
+   
+    color: #fff !important;
+}
 .top ul li.w2 {margin-left:0;}
 
 .t31a1 {float:left; width:610px; padding:17px 0 50px; font:18px 'Times New Roman';}
@@ -1119,9 +1175,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 .adv31 p span a:hover, .t31a2 p a:hover {color:#a6a6a6;}
 .adv31 ul {padding:13px 22px 17px}
 .adv31 ul li {background:url(/template/default/img/pic20a.gif) no-repeat left 2px; padding:0 0 9px 33px;}
-.t31a2 {float:right; width:271px; padding:20px 0; font:16px 'Times New Roman';}
-.cb31, .cb31:visited {display:block; width:271px; height:61px; background:url(/template/default/img/bg271.png) no-repeat; text-align:center; padding:60px 0; font:italic 24px 'Times New Roman'; color:#010101; text-decoration:none; text-shadow:1px 1px #000}
-.cb31:hover {background:url(/template/default/img/bg271on.png) no-repeat; color:#000}
+
 .t31a2 p {line-height:1;}
 .t31a2 p span {font:italic 22px 'Times New Roman'; display:block; padding-bottom:15px;}
 .t31a2 p a, .t31a2 p a:visited {color:#c5a051}
@@ -1149,7 +1203,7 @@ a.rev, a.rev:visited, .text4 ul li div {font-size:14px;}
     cursor:url(/highslide/graphics/zoomin.cur) !important;
 }
 
-.tp i {font:14px 'Times New Roman'; display:block;position: relative;}
+
 .tp i > img{    display: inline-block;position: absolute;margin-top: -3px;margin-left: -20px;}
 .contentTable { background:transparent; width:100%; margin:30px 0}
 .contentTable th {font:17px 'Times New Roman'; border-bottom:1px solid #616161; padding:21px 18px}

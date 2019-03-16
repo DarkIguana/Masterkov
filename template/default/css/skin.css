@@ -4,20 +4,21 @@
 
 .jcarousel-skin-tango .jcarousel-clip-horizontal {
     width: 980px;
-    height: 170px;
+    /*  height: 170px; */
+    max-height: 400px;
 }
 
 .jcarousel-skin-tango .jcarousel-clip {
 	width: 980px;
-    height: 170px;
+  /*  height: 170px; */
 	
 }
 
 
 .jcarousel-skin-tango .jcarousel-item {
-    width: 245px;
-    height: 170px;
-    position:relative; 
+    width: 100%;
+  /*  height: 170px; */
+    position:relative;
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal {

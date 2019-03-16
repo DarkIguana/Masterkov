@@ -1,0 +1,66 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vmc.simple.slide Demo</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/slidermain/vmc.simple.slide.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/slidermain/css/style.min.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .box {
+            height: 400px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .box {
+                height: 400px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                height: 300px;
+            }
+        }
+
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('#vmc-slide').vmcSimpleSlide({
+                minWidth: 400
+            });
+            $('#re-size').on('click', function () {
+                $('#vmc-slide').vmcSimpleSlide('reSize');
+            });
+            $('#show-box').on('click', function () {
+                $('#vmc-slide').show();
+            });
+            $('#hide-box').on('click', function () {
+                $('#vmc-slide').hide();
+            });
+            $('#show-box-2').on('click', function () {
+                $('#vmc-slide').show();
+                $('#vmc-slide').vmcSimpleSlide('reSize');
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="box" id="vmc-slide">
+    <ul>
+        <li title="JQueryScript.net Image Caption"><img src="http://picsum.photos/1000/400?image=941"></li>
+        <li><img src="http://picsum.photos/1000/400?image=959"></li>
+        <li><img src="http://picsum.photos/1000/400?image=945"></li>
+    </ul>
+</div>
+
+
+</body>
+</html>
+        
