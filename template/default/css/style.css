@@ -1206,9 +1206,7 @@ a.rev, a.rev:visited, .text4 ul li div {font-size:14px;}
 .tp i > img{    display: inline-block;position: absolute;margin-top: -3px;margin-left: -20px;}
 .contentTable { background:transparent; width:100%; margin:30px 0}
 .contentTable th {font:17px 'Times New Roman'; border-bottom:1px solid #616161; padding:21px 18px}
-.contentTable td {font:15px 'Times New Roman'; text-align:center; padding:14px 18px 15px; border-bottom:1px solid #616161; vertical-align:top; text-align: left;}				
-
-
+.contentTable td {font: 'Times New Roman'; text-align:center; padding:14px 18px 15px; border-bottom:1px solid #616161; vertical-align:top; text-align: left;}				
 ul.gallery1 {margin:0; padding:0}
 .gallery1 li {float:left; margin:0 17px 20px 0; background:none; padding:0}
 .gallery1 li:nth-child(3n) {margin-right:0;}	
