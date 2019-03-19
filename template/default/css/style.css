@@ -9,6 +9,38 @@ body {
     font: 16px 'Times New Roman';
     color: #000;
 }
+.h2{
+    font: 24px/22px "Times New Roman", Times, serif;
+    color: #000;
+    margin: 0 0 24px;
+}
+.round {
+    width: 9.5em;
+    height: 9.5em;
+    border: 2px solid #c5a051;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1.6em; 
+    text-align: center;  /* выравнять текст по середине по горизонтали */
+    float: left;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.roundZ {
+    font-size: 24px;
+    height: 8em;
+    width: 3em;
+    line-height: 7.5em; 
+    text-align: center;  /* выравнять текст по середине по горизонтали */
+    float: left;
+}
+.round_shem_wrap{
+    display: flex; 
+    margin-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .t31a1 ol li{
     padding-bottom: 5px;
 }
@@ -151,22 +183,48 @@ body {
 
 .list470 li {
     float: left;
-    background: url(../img/pic470-2.jpg) no-repeat;
-    width: 470px;
+    /* background: url(../img/pic470-2.jpg) no-repeat; */
+    width: 303px;
     height: 154px;
     overflow: hidden;
-    margin-top: -8px
+    margin-top: -8px;
+    border: 2px solid #c5a051;        
+}
+.list470 li {
+    height: 130px;
+    margin-bottom: 18px;
 }
 
-.list470 li div {
-    padding: 0px 20px 0 139px;
-    font-size: 14px;
-}
+.list470 li a {
+    display: block;
+    font-size: 27px;
+    text-align: center;
+   padding: 45px 0 44px 0;
+   text-decoration: none;
+   }
+   
+.list470 li a :hover {
+    
+    
+     border:none;
+   }
+   .list470  :hover {
+       font-size: 28px;
+    
+    
+   }
+.block470-2 {
+       padding: 32px 0 27px 0 !important;
+   }
 
 .list470 li div span {
     font: 50px 'Conv_shellyallegroc';
+   padding: 40px 0px 0 0px;
 }
-
+.list470 li div a {
+   
+    text-align: center;
+}
 .list470 li div p {
     padding-left: 10px;
     margin-top: -8px;
@@ -174,7 +232,7 @@ body {
 }
 
 .list470 li.block470-1 {
-    background: url(../img/pic470-1.jpg) no-repeat;
+    /*background: url(../img/pic470-1.jpg) no-repeat;*/
     margin-right: 20px;
 }
 
@@ -889,14 +947,9 @@ a.rev span,a.rev:visited span {
     color: #c5a051
 }
 
-.list470 li {
-    height: 130px;
-    margin-bottom: 18px;
-}
 
-.list470 li div {
-    padding-top: 20px;
-}
+
+
 
 .text2 ul li {
     margin-right: 0;
@@ -1127,7 +1180,7 @@ a.refresh,a.refresh:visited,.text4 ul li div {
 .t31a2 p a, .t31a2 p a:visited {color:#c5a051}
 
 .list470 li {height:130px; margin-bottom:18px;}
-.list470 li div {padding-top:20px;}
+
 .text2 ul li {margin-right:0;}
 a.refresh, a.refresh:visited, .text4 ul li div {font-size:14px;}
 a.rev, a.rev:visited, .text4 ul li div {font-size:14px;}
@@ -1207,8 +1260,4 @@ ul.gallery1 {margin:0; padding:0}
                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0c665', endColorstr='#9d6902',GradientType=0 ); 
 }
 .fbf em input:hover {opacity:.8}
-.h2{
-    font: 24px/22px "Times New Roman", Times, serif;
-    color: #000;
-    margin: 0 0 24px;
-}
+
