@@ -1,6 +1,7 @@
 .vmc-simple-slide-wrap {
     overflow: hidden;
-    position: relative
+    position: relative;
+ 
 }
 
 .vmc-simple-slide {
@@ -13,7 +14,7 @@
 
 .vmc-simple-slide .vmc-simple-slide-item {
     float: left;
-    height: 100%;
+    height: 459px !important;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover
@@ -30,31 +31,40 @@
 .vmc-simple-slide-handle-buttons {
     z-index: 10;
     position: absolute;
-    bottom: 10px;
+    bottom: 91px;
     left: 0;
     width: 100%;
+    height: 27px;
     list-style: none;
-    padding: 0;
+    padding: 4px 0 0 0;
     margin: 0;
-    text-align: center
+    text-align: center;
+    background: #000;
+    filter: alpha(Opacity=50);
+    -moz-opacity: .5;
+    opacity: .5
 }
 
 .vmc-simple-slide-handle-buttons .vmc-simple-slide-handle-button {
     display: inline-block;
     *zoom: 1;
     *display: inline;
-    width: 12px;
-    height: 12px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: #fff;
     margin: 0 6px;
-    cursor: pointer
+    cursor: pointer;
+         z-index: 13;
 }
 
 .vmc-simple-slide-handle-buttons .active {
-    background: #c00
+    background: #7fd2f1
 }
 
+.vmc-simple-slide-handle-buttons li {
+margin-top: 10px
+}
 .vmc-simple-slide-page-buttons {
     z-index: 10;
     position: absolute;
@@ -66,8 +76,8 @@
 
 .vmc-simple-slide-page-buttons .vmc-simple-slide-page-button {
     position: absolute;
-    height: 120px;
-    width: 60px;
+    height: 80px;
+    width: 70px;
     background: transparent no-repeat center center;
     background-size: contain;
     cursor: pointer
@@ -76,14 +86,14 @@
 .vmc-simple-slide-page-buttons .next {
     top: -60px;
     right: 0;
-    border-radius: 20px 0 0 20px;
+    border-radius: 40px 0 0 40px;
     background-image: url("next.gif")
 }
 
 .vmc-simple-slide-page-buttons .prev {
     top: -60px;
     left: 0;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 40px 40px 0;
     background-image: url("prev.gif")
 }
 
@@ -100,11 +110,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%;
-    background: #000;
-    filter: alpha(Opacity=30);
+    height: 91px;
+    background: #eeeeee;
+    /*filter: alpha(Opacity=30);
     -moz-opacity: .3;
-    opacity: .3
+    opacity: .3 */
 }
 
 .vmc-simple-slide-summary {
@@ -113,14 +123,17 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%;
+    height: 91px;
     overflow: hidden
 }
 
 .vmc-simple-slide-summary .text {
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
+    color: #333;
+    padding: 33px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
     font-weight: 400
 }
 
@@ -129,19 +142,19 @@
     text-decoration: none
 }
 .box_slider {
-           height: 541px; 
+           height: 550px; 
              /* display: block;
             overflow: auto;*/
         }
 
         @media screen and (max-width: 992px) {
             .box_slider {
-                height: 400px;
+                height: 550px;
             }
         }
 
         @media screen and (max-width: 768px) {
             .box_slider {
-                height: 300px;
+                height: 550px;
             }
         }
