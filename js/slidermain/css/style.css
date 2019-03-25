@@ -3,7 +3,9 @@
     position: relative;
  
 }
-
+.vmc-simple-slide-wrap  ul li{
+   padding: 0
+}
 .vmc-simple-slide {
     width: 200%;
     height: 100%;
@@ -53,7 +55,7 @@
     height: 6px;
     border-radius: 50%;
     background: #fff;
-    margin: 0 6px;
+    margin: 0 12px;
     cursor: pointer;
          z-index: 13;
 }

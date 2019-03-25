@@ -3,7 +3,7 @@ class galleryoffice_index {
 	
 	function __construct(){
 		$out.='  
-                    <div class="box" id="vmc-slide">
+                    <div class="box_slider" id="vmc-slide">
     <ul>
         <li title="Ремонт офисов"><img src="/img/slider_office/masterkov-remont-ofisov-01.jpg"></li>
         <li title="Ремонт офисов"><img src="/img/slider_office/masterkov-remont-ofisov-02.jpg"></li>
