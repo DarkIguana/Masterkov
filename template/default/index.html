@@ -13,15 +13,21 @@
 <link rel="stylesheet" type="text/css" href="/template/default/css/style.css" />
 <link rel="stylesheet" type="text/css" href='/highslide/highslide.css' />
 
-<script type="text/javascript" src="/template/default/js/jquery-1.7.2.min.js"></script>
+<script src="/js/jquery-1.12.4.min.js" ></script>
+        <script type="text/javascript" src="/js/slidermain/vmc.simple.slide.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../js/slidermain/css/style.css">
+        
+<!-- <script type="text/javascript" src="/template/default/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/template/default/js/jquery.placeholder.min.js"></script>
 <script type="text/javascript" src="/template/default/js/dw_scroll_c.js"></script>
 <script type="text/javascript" src="/template/default/js/jquery.roundabout.js"></script>
 <script type="text/javascript" src="/template/default/js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="/core/ext-core.js"></script>
+<script type="text/javascript" src="/core/ext-core.js"></script> 
 <script type="text/javascript" src="/core/form.js"></script>
 <script type="text/javascript" src="/highslide/highslide-full.js"></script>
 <script type="text/javascript" src="/template/default/js/scripts.js"></script>
+-->
+
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
 
@@ -163,7 +169,26 @@
 (function(){ var widget_id = 'jGlUSLdW3r';
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
 {/literal} END JIVOSITE CODE -->
-
+<script type="text/javascript">
+        $(function () {
+            $('#vmc-slide').vmcSimpleSlide({
+                minWidth: 400
+            });
+            $('#re-size').on('click', function () {
+                $('#vmc-slide').vmcSimpleSlide('reSize');
+            });
+            $('#show-box').on('click', function () {
+                $('#vmc-slide').show();
+            });
+            $('#hide-box').on('click', function () {
+                $('#vmc-slide').hide();
+            });
+            $('#show-box-2').on('click', function () {
+                $('#vmc-slide').show();
+                $('#vmc-slide').vmcSimpleSlide('reSize');
+            });
+        });
+    </script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
